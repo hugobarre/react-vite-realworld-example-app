@@ -19,6 +19,18 @@ function Navbar() {
           </li>
           {isAuth && (
             <>
+            <li className="nav-item">
+                <NavLink activeClassName="active" className="nav-link" to="/products">
+                  <i className="ion-compose" />
+                  &nbsp;Products
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink activeClassName="active" className="nav-link" to="/createProduct">
+                  <i className="ion-compose" />
+                  &nbsp;New Product
+                </NavLink>
+              </li>
               <li className="nav-item">
                 <NavLink activeClassName="active" className="nav-link" to="/editor">
                   <i className="ion-compose" />

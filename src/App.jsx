@@ -1,9 +1,10 @@
 import React from 'react'
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
-import { Home, Settings, Editor, Article, Profile, Auth } from './pages'
+import { Home, Settings, Editor, Article, Profile, Auth, Products, CreateProduct } from './pages'
 import { AuthRoute, GuestRoute, Navbar } from './components'
 
 import './App.css'
+
 
 function App() {
   return (
@@ -17,7 +18,9 @@ function App() {
           <GuestRoute path="/register" element={<Auth key="register" />} />
           <GuestRoute path="/login" element={<Auth key="login" />} />
           <AuthRoute path="/settings" element={<Settings />} />
+          <AuthRoute path="/products" element={<Products />} />
           <AuthRoute path="/editor" element={<Editor />} />
+          <AuthRoute path="/createProduct" element={<CreateProduct />} />          
           <Route path="/editor/:slug" element={<Editor />} />
           <Route path="/article/:slug" element={<Article />} />
           <Route path="/profile/:username" element={<Profile />} />

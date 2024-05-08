@@ -35,7 +35,7 @@ if (window.Cypress && process.env.NODE_ENV === 'test') {
   })
   cyServer.logging = false
 } else if(process.env.NODE_ENV === 'development') {
-  makeServer({ environment: 'development' })
+  //makeServer({ environment: 'development' })
 }
 
 ReactDOM.render(

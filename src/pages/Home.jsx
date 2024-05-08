@@ -72,7 +72,7 @@ function Home() {
             <ArticleList filters={filters} />
           </div>
           <div className="col-md-3">
-            <PopularTags onTagClick={onTagClick} />
+            <PopularTags onTagClick={onTagClick} />           
           </div>
         </div>
       </div>
